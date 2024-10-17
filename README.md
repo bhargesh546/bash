@@ -7,4 +7,16 @@ Some bash related work
     cal
     date
 
+### Disk Usage or File Size:
+    df -h
+    du -sh <directory_path>*
+
+### System Performance
+    top
+
+## Using the shell
+
+### Exploring
+
+    
 
