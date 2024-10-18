@@ -1,0 +1,68 @@
+tar -cvf myfiles.tar newfolder
+
+tar -caf myfiles.tar.gz newfolder
+
+# unpack tar files present in the directory
+tar -xf myfiles.tar.gz
+
+# unpack tar files in different directory
+tar -xf myfiles.tar.gz -C unpack2
+
+# to zip files along with the contents of directory newfolder/
+zip -r exfiles.zip newfolder/
+
+unzip unpack3/exfiles.zip -d unpack4/
+
+
+# Environment variables
+env
+
+echo $PATH
+
+# to find the path of command ls
+which ls
+
+# edit the path need to edit shell profile file
+
+vi ~/.bash_profile
+PATH ="$PATH:/"
+
+#CHALLENGE
+tar -xvf log.tar.gz
+
+# to look at file auth.log
+less auth.log
+
+cat auth.log | grep "input_userauth_request" | awk '{print $9}' | sort -u 1> users.txt
+
+# System info in etc directory
+ls -l /etc/*release
+
+# what version of linux kernal we are using to find the features to use
+uname -a or uname -r
+
+# info about a hardware
+free -h         # to find the memory a system has
+
+cat /proc/cpuinfo
+
+lscpu
+
+# To find the system harddrive space
+df -h           # disk space available
+sudo du -hd1 /
+lshw OR sudo lshw | less
+
+# network information
+ip a
+
+# package
+apt search tree
+
+apt show tree   # to know more about the package
+
+sudo apt update
+sudo apt install tree
+man tree
+
+sudo apt upgrade

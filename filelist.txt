@@ -1,0 +1,13 @@
+LICENSE
+README.md
+filelist.txt
+hello.sh
+myfiles.tar
+mynewfile
+mynewfile.tgz
+newfolder
+test.sh
+unpack1
+unpack2
+unpack3
+unpack4
